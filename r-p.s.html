@@ -11,32 +11,30 @@
 <body>
     <h1>Rock, Paper, Scissors</h1>
         <script>
+        // let input = prompt('Rock, paper or scissors?');
+        // let playerSelection = input.toLowerCase;
+
+    
         const items = ['rock', 'paper', 'scissors'];
-        function computerPlay(items) {
+        // const computerSelection = computerPlay();
+
+        function computerPlay() {
             return items[Math.floor(Math.random()*items.length)];
         }
         console.log(computerPlay(items));
+
     
-        // function playRound() {
-            const computerSelection = computerPlay();
-            let input = prompt('Rock, paper or scissors?');
-            let playerSelection = input.toLowerCase;
-    
-            if (playerSelection === "rock" || playerSelection === "scissors" || playerSelection === "paper") {
-                console.log(playerSelection)
+        function playRound(playerSelection, computerSelection) {
+            if (computerSelection === 'paper' && playerSelection === 'rock') {
+                return "You Lose! Paper beats Rock"
             } else {
-                {alert("Please enter rock, paper, or scissors");
-                }
-            // }
-            // if (computerSelection === playerSelection) {
-            //     return "Draw again, my friend"
-            // }          
-            // return playRound();
-            
-        }
-     
-        console.log(playRound(playerSelection, ComputerSelection));
-    
+                return "Who knows who won - I didn't write the code yet"
+            }
+    }
+    const playerSelection = 'rock'
+    const computerSelection = computerPlay()
+    console.log(playRound(playerSelection, computerSelection))
+
         </script>
         
     </body>
