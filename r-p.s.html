@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="r-p-s.css" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors</title>
 
 </head>
 <body>
-    <script>
+    <h1>Rock, Paper, Scissors</h1>
+        <script>
+        const items = ['rock', 'paper', 'scissors'];
+        function computerPlay(items) {
+            return items[Math.floor(Math.random()*items.length)];
+        }
+        console.log(computerPlay(items));
     
-    function computerPlay(items) {
-        return items[Math.floor(Math.random()*items.length)];
-    }
-
-    const items = ['rock', 'paper', 'scissors'];
-    console.log(computerPlay(items));
-
-    function playRound(playerSelection, ComputerSelection) {
-        return 
-    }
-
-    const playerSelection = 'rock';
-    const ComputerSelection = computerPlay();
-    console.log(playRound(playerSelection, ComputerSelection));
-
-    </script>
+        // function playRound() {
+            const computerSelection = computerPlay();
+            let input = prompt('Rock, paper or scissors?');
+            let playerSelection = input.toLowerCase;
     
-</body>
+            if (playerSelection === "rock" || playerSelection === "scissors" || playerSelection === "paper") {
+                console.log(playerSelection)
+            } else {
+                {alert("Please enter rock, paper, or scissors");
+                }
+            // }
+            // if (computerSelection === playerSelection) {
+            //     return "Draw again, my friend"
+            // }          
+            // return playRound();
+            
+        }
+     
+        console.log(playRound(playerSelection, ComputerSelection));
+    
+        </script>
+        
+    </body>
 </html>
+
