@@ -22,18 +22,29 @@
             return items[Math.floor(Math.random()*items.length)];
         }
         console.log(computerPlay(items));
+        const playerSelection = 'rock'
+        const computerSelection = computerPlay().toLowerCase;  
 
-    
-        function playRound(playerSelection, computerSelection) {
+        function game() {
+
+            function playRound(playerSelection, computerSelection) {
             if (computerSelection === 'paper' && playerSelection === 'rock') {
                 return "You Lose! Paper beats Rock"
             } else {
                 return "Who knows who won - I didn't write the code yet"
+
             }
-    }
-    const playerSelection = 'rock'
-    const computerSelection = computerPlay()
-    console.log(playRound(playerSelection, computerSelection))
+
+            }
+            for (var i = 0; i <=5 ; i++) {
+                playRound();
+                }
+
+            console.log(playRound(playerSelection, computerSelection))
+
+
+        }
+
 
         </script>
         
