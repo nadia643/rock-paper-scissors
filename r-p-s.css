@@ -7,3 +7,17 @@ h1 {
 
 I ADDED GAME FUNCTION IN AT THE END, AND THE FOR LOOP.
 THIS NEEDS TWEAKING TO MAKE THE RETURN STATEMENT SHOW AGIAN
+
+function game() {
+    for (var i = 0; i <=5 ; i++) {
+        playRound();
+        }
+};
+
+
+
+else if(playerSelection === 'rock' && computerSelection === 'scissors) {
+    return "You win! Rock beats scissors!;
+} else if(playerSelection === 'rock' && computerSelection === 'rock') {
+    return "Draw! Try again!";
+}
