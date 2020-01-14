@@ -11,6 +11,21 @@ const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
 
+const items = ['rock', 'paper', 'scissors'];
+
+function computerPlay() {
+    return items[Math.floor(Math.random()*items.length)];
+}
+
+function game(userSelection) {
+    const computerSelection = computerPlay().toLowerCase();
+    console.log("Computer choice: " + computerSelection);
+    console.log("User choice: " + userSelection);
+}
+
+game("example");
+
+
 rock_div.addEventListener('click', function() {
     console.log("You clicked on rock");
 })
@@ -24,12 +39,7 @@ scissors_div.addEventListener('click', function() {
 
 
 
-// const items = ['rock', 'paper', 'scissors'];
-
-// function computerPlay() {
-// return items[Math.floor(Math.random()*items.length)];
-// }
-// const computerSelection = computerPlay().toLowerCase();  
+  
 // const playerSelection = 'rock';
 
 // console.log(computerSelection);
