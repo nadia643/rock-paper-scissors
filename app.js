@@ -1,8 +1,7 @@
-const userScore = 0;
-const computerScore=0;
+let userScore = 0;
+let computerScore=0;
 // console.log(userScore);
 // console.log(computerScore);
-
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
 const scoreBoard_div = document.querySelector(".score-board");
@@ -17,30 +16,46 @@ function computerPlay() {
     return items[Math.floor(Math.random()*items.length)];
 }
 
-function game(userSelection) {
-    const computerSelection = computerPlay().toLowerCase();
-    console.log("User choice: " + userSelection);
-    console.log("Computer choice: " + computerSelection);
-    // switch(userSelection + computerSelection) {
-    //     case "rs":
-    //     case "pr":
-    //     case "sp":
-    //         console.log("User wins");
-    //         break;
-    //     case "rp":
-    //     case "pr":
-    //     case "sr":
-    //         console.log("Computer wins boooo");
-    //         break;
-    //     case "rr":
-    //     case "pp":
-    //     case "ss":
-    //         console.log("DRAWWWW");
-    //         break;
-    // }
+function win() {
+    userScore++
+    userScore_span.innerHTML = userScore;
+    console.log("User wins");
+    console.log(userScore);
+}
+function lose() {
+    computerScore++
+    computerScore_span.innerHTML = computerScore;
+    console.log("Computer wins boooo");
+    console.log(computerScore);
+}
+function draw() {
+    console.log("DRAWWWW");
 }
 
-// game("c");
+function game(userSelection) {
+    const computerSelection = computerPlay().toLowerCase();
+    // console.log("User choice: " + userSelection);
+    // console.log("Computer choice: " + computerSelection);
+    switch(userSelection + computerSelection) {
+        case "rockscissors":
+        case "paperrock":
+        case "scissorspaper":
+            win();
+            break;
+        case "rockpaper":
+        case "paperscissors":
+        case "scissorsrock":
+            lose();
+            break;
+        case "rockrock":
+        case "paperpaper":
+        case "scissorsscissors":
+            draw();
+            break;
+    }
+}
+
+game();
 
 function main() {
 rock_div.addEventListener('click', function() {
