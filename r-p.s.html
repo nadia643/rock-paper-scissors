@@ -6,16 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rock, Paper, Scissors</title>
-
 </head>
 <body>
+    <header>
     <h1>Rock, Paper, Scissors</h1>
-    <img src = '/home/nadia/Desktop/rock.png' alt = 'rock'>
-    <button> Rock </button>
-    <img src = '/home/nadia/Desktop/paper.png' alt = 'rock'>
-    <button> Paper </button>    
-    <img src = '/home/nadia/Desktop/scissors.png' alt = 'rock'>
-    <button> Scissors </button>
+    </header>
+    <div class="choices">
+        <div class="choice" id="r">
+                <img src = '/home/nadia/Desktop/rock.png' alt = 'rock'> 
+        </div>
+        <div class="choice" id="p">
+                <img src = '/home/nadia/Desktop/paper.png' alt = 'paper'>
+        </div>
+        <div class="choice" id="s">
+                <img src = '/home/nadia/Desktop/scissors.png' alt = 'scissors'>
+        </div>
+    </div>
+
+<div class="scoreboard">
+    <div id="user-label" class="badge">user</div>
+    <div id="computer-label" class="badge">comp</div>
+    <span id="user-score">0</span>:<span id="computer-score">0</span>
+</div>
+
+<div class="result"> 
+    <p>Result goes here</p>
+</div>
+
+    <p id = "action message">Make your move</p>
 
         <script>
         const items = ['rock', 'paper', 'scissors'];
