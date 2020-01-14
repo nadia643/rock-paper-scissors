@@ -1,7 +1,7 @@
 const userScore = 0;
 const computerScore=0;
-console.log(userScore);
-console.log(computerScore);
+// console.log(userScore);
+// console.log(computerScore);
 
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
@@ -11,32 +11,51 @@ const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
 
-const items = ['rock', 'paper', 'scissors'];
 
 function computerPlay() {
+    const items = ['rock', 'paper', 'scissors'];
     return items[Math.floor(Math.random()*items.length)];
 }
 
 function game(userSelection) {
     const computerSelection = computerPlay().toLowerCase();
-    console.log("Computer choice: " + computerSelection);
     console.log("User choice: " + userSelection);
+    console.log("Computer choice: " + computerSelection);
+    // switch(userSelection + computerSelection) {
+    //     case "rs":
+    //     case "pr":
+    //     case "sp":
+    //         console.log("User wins");
+    //         break;
+    //     case "rp":
+    //     case "pr":
+    //     case "sr":
+    //         console.log("Computer wins boooo");
+    //         break;
+    //     case "rr":
+    //     case "pp":
+    //     case "ss":
+    //         console.log("DRAWWWW");
+    //         break;
+    // }
 }
 
-game("example");
+// game("c");
 
-
+function main() {
 rock_div.addEventListener('click', function() {
-    console.log("You clicked on rock");
+    game("rock");
 })
 paper_div.addEventListener('click', function() {
-    console.log("You clicked on paper");
+    game("paper");
 })
 scissors_div.addEventListener('click', function() {
-    console.log("You clicked on scissors");
+    game("scissors");
 })
 
+};
 
+main();
 
 
   
