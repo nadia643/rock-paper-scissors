@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background: yellowgreen;
+    background:slategray;
 }
 header {
     background: white;
@@ -29,7 +29,7 @@ header > h1 {
     position: relative;
 }
 .badge {
-    background: #E2584D;
+    background: rgb(238, 128, 120);
     color: white;
     font-size: 14px;
     padding: 2px 10px;
@@ -68,10 +68,13 @@ header > h1 {
 }
 .choice:hover {
     cursor: pointer;
-    background: darkgreen;
+    background: lightslategray;
 }
 #action-message {
     text-align: center;
     color: white;
     font: arial;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
 }
