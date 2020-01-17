@@ -7,7 +7,7 @@ body {
     background:slategray;
 }
 header {
-    background: white;
+    background:rgb(238, 128, 120);;
     color:green;
     font: arial;
     padding: 20px;
@@ -69,6 +69,8 @@ header > h1 {
 .choice:hover {
     cursor: pointer;
     background: lightslategray;
+    border-color: rgb(238, 128, 120);
+
 }
 #action-message {
     text-align: center;
@@ -78,3 +80,6 @@ header > h1 {
     font-size: 20px;
     margin-top: 20px;
 }
+
+
+

@@ -29,18 +29,18 @@ function convertToCapital(computerSelection) {
     return "Scissors";
 }
 
-
 function win(userSelection, computerSelection) {
     userScore++
     userScore_span.innerHTML = userScore;
     result_div.innerHTML = convertToCapital(userSelection) + `${smallUserWord}` +" beats " + convertToCapital(computerSelection) + `${smallCompWord}` + ". You win!"
 }
+
 function lose(userSelection, computerSelection) {
     computerScore++
     computerScore_span.innerHTML = computerScore;
     result_div.innerHTML = convertToCapital(computerSelection) + `${smallCompWord}` + " beats " + convertToCapital(userSelection) + `${smallUserWord}` + ". You lose!"
-
 }
+
 function draw() {
     result_div.innerHTML = "Same same. Try again!"
 }
