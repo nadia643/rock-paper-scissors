@@ -47,8 +47,6 @@ function draw() {
 
 function game(userSelection) {
     const computerSelection = computerPlay().toLowerCase();
-    // console.log("User choice: " + userSelection);
-    // console.log("Computer choice: " + computerSelection);
     switch(userSelection + computerSelection) {
         case "rockscissors":
         case "paperrock":
@@ -80,42 +78,13 @@ paper_div.addEventListener('click', function() {
 scissors_div.addEventListener('click', function() {
     game("scissors");
 })
+lizard_div.addEventListener('click', function() {
+    game("lizard");
+})
+spock_div.addEventListener('click', function() {
+    game("spock");
+})
 
 };
 
 main();
-
-
-  
-// const playerSelection = 'rock';
-
-// console.log(computerSelection);
-// console.log(playerSelection);
-
-
-
-// function playRound(playerSelection, computerSelection) {
-// if(playerSelection === 'rock' && computerSelection === 'paper') {
-//     return "You lose! Paper beats rock!";
-// } else if(playerSelection === 'rock' && computerSelection === 'scissors') {
-//     return "You win! Rock beats scissors";
-// } else if (playerSelection === 'rock' && computerSelection === 'rock') {
-//     return "It's a draw!";
-// } else if(playerSelection === 'paper' && computerSelection === 'rock') {
-//     return "You win! Paper beats rock!";
-// } else if(playerSelection === 'paper' && computerSelection === 'scissors') {
-//     return "You lose! Scissors beats paper";
-// } else if (playerSelection === 'paper' && computerSelection === 'paper') {
-//     return "It's a draw!"; 
-// } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
-//     return "You win! Scissors beats paper";
-// } else if (playerSelection === 'scissors' && computerSelection === 'rock') {
-//     return "You lose! Rock beats scissors";
-// } else if (playerSelection === 'scissors' && computerSelection === 'scissors') {
-//     return "It's a draw!"; 
-// }
-
-// } 
-
-
-// console.log(playRound(playerSelection, computerSelection));
