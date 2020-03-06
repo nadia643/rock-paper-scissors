@@ -4,7 +4,8 @@
   "description": "In this project, I will be making a rock-paper-scissors game.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo 'build script executed'"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/nadia643/rock-paper-scissors/issues"
   },
-  "homepage": "https://github.com/nadia643/rock-paper-scissors#readme"
+  "homepage": "https://github.com/nadia643/rock-paper-scissors#readme",
+  "dependencies": {
+    "build": "^0.1.4"
+  }
 }
