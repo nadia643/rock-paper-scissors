@@ -120,7 +120,7 @@ header > h1 {
 .popup .popuptext {
     visibility: hidden;
     width: 290px;
-    background-color: rgba(57, 196, 196, 0.678);
+    background-color: rgba(104, 195, 218, 0.459);
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -128,22 +128,10 @@ header > h1 {
     position: absolute;
     z-index: 1;
     bottom: 125%;
-    left: 100%;
+    left: 190%;
     margin-left: -80px;
 }
   
-  /* Popup arrow */
-  /* .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-  */
   /* Toggle this class - hide and show the popup */
 .popup .show {
     visibility: visible;
